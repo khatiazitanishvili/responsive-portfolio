@@ -3,13 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tips mit flex und grid</title>
+    <title>Responsive Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width">
+    <!-- BOXICONS CDN -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width"> -->
 </head>
 
 <body>
-    <button class="btn">click</button>
+    <nav>
+        <div class="container">
+            <a href="h3" class="nav__logo">
+                <h3>PORTFOLIO</h3>
+            </a>
+            <ul id="nav__items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#specialist">Specialist</a></li>
+                <li><a href="#testimonials">Testoimonials</a></li>
+                <li><a href="#appointment" class="btn">Make Appointment</a></li>
+            </ul>
+            <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+            <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+        </div>
+    </nav>
+    <!-- ================================ END OF NAV ================================ -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
