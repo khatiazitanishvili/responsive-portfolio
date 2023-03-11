@@ -4,8 +4,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 
+
         article {
-            @include gradientBackground;
+            //  @include gradientBackground;
+            border: ridge black;
             padding: 1.5rem;
             border-radius: 1rem;
             display: flex;
@@ -63,9 +65,9 @@
                     h4 {
                         margin-bottom: 0.8rem;
 
-                        &:hover {
-                            margin: 0;
-                        }
+                        // &:hover {
+                        //     margin: 0;
+                        // }
                     }
                 }
             }
