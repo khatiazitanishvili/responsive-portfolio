@@ -47,6 +47,9 @@
                     transition: all 1s ease;
                 }
 
+
+
+
             }
 
 
@@ -54,6 +57,7 @@
                 margin: 1.5rem 0;
                 text-align: start;
             }
+
 
             .project__view {
                 position: absolute;
@@ -101,20 +105,37 @@
 }
 
 
-// ================================ MEDIA QUERIES(MEDIUM DEVICES) ========================
-@media screen and (max-width: 1024px) {
-    #project {
-        .container {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
+
+
+
+
+
 
 // ================================ MEDIA QUERIES(MEDIUM DEVICES) ========================
 @media screen and (max-width: 1024px) {
     #project {
         .container {
+            grid-template-columns: 1fr 1fr;
+
+
+
+            pointer-events: none;
+
+
+        }
+    }
+}
+
+
+
+// ================================ MEDIA QUERIES(SMALL DEVICES) ========================
+@media screen and (max-width: 600px) {
+    #project {
+        .container {
             grid-template-columns: 1fr;
+
+
+
         }
     }
 }

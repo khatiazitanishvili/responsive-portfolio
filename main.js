@@ -9,8 +9,19 @@ openNavBtn.addEventListener("click", () => {
 })
 
 
-closeNavBtn.addEventListener("click", () => {
+const closeNav = () => {
     navItems.style.display = "none";
     openNavBtn.style.display = "inline-block";
     closeNavBtn.style.display = "none"
-})
+}
+
+closeNavBtn.addEventListener("click", closeNav)
+
+// closing nav if clicked
+if (window.innerWidth < 1024) {
+    document.querySelectorAll('#nav__items li a').forEach(navItems => {
+        navItems.addEventListener('click', () => {
+            closeNav();
+        })
+    })
+}
