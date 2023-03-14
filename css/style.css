@@ -12,14 +12,21 @@
 }
 
 html {
+  background: linear-gradient(135deg, hsl(0, 0%, 8%), hsl(0, 0%, 14%));
+  color: #ffffff;
   scroll-behavior: smooth;
+}
+html h1,
+html h2,
+html h3,
+html h4,
+html h5 {
+  color: #ffffff;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  color: rgba(12, 3, 27, 0.7);
-  background-color: rgba(76, 201, 240, 0.1);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -41,18 +48,18 @@ h3,
 h4,
 h5 {
   line-height: 1.2;
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
 }
 
 section {
-  margin-top: 6rem;
+  margin-top: 10rem;
+  text-transform: uppercase;
 }
 section > h2 {
   text-align: center;
-}
-section > p {
-  text-align: center;
-  width: 42%;
-  margin: 0.6rem auto 2.5rem;
+  margin: 5.5rem;
+  font-size: 2rem;
 }
 
 .btn {
@@ -61,13 +68,13 @@ section > p {
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
-  background: #f72585;
+  background: hsl(153, 71%, 59%);
   color: #ffffff;
   cursor: pointer;
   transition: all 400ms ease;
 }
 .btn:hover {
-  background: #f84c9b;
+  background: #6fe7b1;
   box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.15);
 }
 
@@ -77,13 +84,13 @@ section > p {
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
-  background: #480ca8;
+  background: hsl(0, 0%, 8%);
   color: #ffffff;
   cursor: pointer;
   transition: all 400ms ease;
 }
 .btn-primary:hover {
-  background: #580fce;
+  background: #292929;
   box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.15);
 }
 
@@ -116,7 +123,7 @@ nav {
   z-index: 10;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  background: linear-gradient(135deg, hsl(0, 0%, 8%), hsl(0, 0%, 14%));
   color: #ffffff;
   box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
 }
@@ -200,10 +207,10 @@ nav .container .nav__logo h3 {
     display: block;
     padding: 1.5rem 2rem;
     border-radius: 0;
-    background: linear-gradient(#4cc9f0, #14b8eb);
+    background: linear-gradient(hsl(0, 0%, 14%), #050505);
   }
   nav .container ul li a.btn {
-    background: #f72585;
+    background: hsl(153, 71%, 59%);
   }
 }
 @keyframes flipNavItem {
@@ -216,19 +223,10 @@ nav .container .nav__logo h3 {
   }
 }
 header {
-  background: linear-gradient(135deg, #480ca8, #4cc9f0);
-  color: #ffffff;
   height: 100vh;
   display: grid;
   place-items: center;
   overflow: hidden;
-}
-header h1,
-header h2,
-header h3,
-header h4,
-header h5 {
-  color: #ffffff;
 }
 header .container {
   margin-top: 3rem;
@@ -245,7 +243,7 @@ header .container .header__content h1 {
 }
 header .container .header__content p {
   margin: 1rem 0 2rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: hsl(0, 0%, 85%);
   font-size: 1.1rem;
 }
 
@@ -282,7 +280,7 @@ header .container .header__content p {
   gap: 2rem;
 }
 #services .container article {
-  border: ridge black;
+  border: ridge white;
   padding: 1.5rem;
   border-radius: 1rem;
   display: flex;
@@ -325,12 +323,12 @@ header .container .header__content p {
 #project .container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 #project .container article {
+  background-color: transparent;
   border-radius: 1rem;
-  box-shadow: 0 1.5rem 1.5rem rgba(12, 3, 27, 0.1);
   position: relative;
   transition: all 700ms ease;
 }
@@ -341,15 +339,16 @@ header .container .header__content p {
   left: 0;
   border-radius: 1rem;
 }
-#project .container article:hover .project__view,
-#project .container article:hover .project__github {
+#project .container article:hover .project__view {
   opacity: 1;
   visibility: visible;
 }
 #project .container article .project__image {
+  height: 100%;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  height: auto;
 }
 #project .container article .project__image::before {
   content: "";
@@ -359,39 +358,26 @@ header .container .header__content p {
   position: absolute;
   top: 0;
   left: -100%;
-  background: linear-gradient(135deg, rgba(72, 12, 168, 0.8), rgba(76, 201, 240, 0.8));
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.8), rgba(36, 36, 36, 0.8));
   border-radius: 50%;
   transition: all 1s ease;
 }
 #project .container article .project__details {
   margin: 1.5rem 0;
   text-align: start;
+  text-transform: uppercase;
+}
+#project .container article .project__details h4 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#project .container article .project__details p {
+  font-size: 1rem;
+  word-spacing: 1rem;
 }
 #project .container article .project__view {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 1s 200ms ease;
-}
-#project .container article .project__view a {
-  background-color: #ffffff;
-  color: #480ca8;
-  padding: 0.4rem;
-  display: flex;
-  font-size: 0.8rem;
-  border-radius: 50%;
-}
-#project .container article .project__view a:hover {
-  background: #480ca8;
-}
-#project .container article .project__github {
-  background-color: #480ca8;
-  color: #ffffff;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -401,6 +387,16 @@ header .container .header__content p {
   opacity: 0;
   visibility: hidden;
   transition: all 1s 400ms ease;
+}
+#project .container article .project__view a {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#project .container article .project__view a:hover {
+  color: hsl(153, 71%, 59%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -412,6 +408,52 @@ header .container .header__content p {
 @media screen and (max-width: 600px) {
   #project .container {
     grid-template-columns: 1fr;
+  }
+}
+#technologies .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+#technologies .container article {
+  border: ridge white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: all 400ms ease;
+}
+#technologies .container article:hover {
+  margin-top: -0.5rem;
+}
+#technologies .container article i {
+  font-size: 1.7rem;
+}
+#technologies .container article div h4 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #technologies .container {
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  #technologies .container article {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+  #technologies .container article:hover {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #technologies .container {
+    grid-template-columns: 1fr;
+  }
+  #technologies .container article div h4 {
+    margin-bottom: 0.8rem;
   }
 }
 /* CONTACT */

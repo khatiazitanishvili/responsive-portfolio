@@ -11,6 +11,7 @@
     list-style: none;
     text-decoration: none;
 
+
 }
 
 // :root {
@@ -20,8 +21,8 @@
 // }
 
 
-$primary-color: #480ca8;
-$primary-color-variant: #4cc9f0;
+//$primary-color: #480ca8;
+//$primary-color-variant: #4cc9f0;
 $secondary-color: #f72585;
 $white-color: #ffffff;
 $light-color: rgba(#fff, 0.7);
@@ -30,6 +31,29 @@ $dark-color: rgba($black-color, 0.7);
 $success-color: #54eb72;
 $container-lg: 82%;
 $container-md: 90%;
+
+
+
+
+$primary-color: hsl(0, 0%, 8%);
+$primary-color-variant: hsl(0, 0%, 14%);
+$secondary-color: hsl(153, 71%, 59%);
+$text1: hsl(0, 0%, 100%);
+$text2: hsl(0, 0%, 85%);
+$invalid: hsl(7, 100%, 68%);
+$fs-18: 1.125rem;
+$fs-88: 5.5rem;
+$fs-72: 4.5rem;
+$fs-40: 2.5rem;
+$fs-48: 3rem;
+$fs-36: 2.25rem;
+$fs-32: 2rem;
+$fs-24: 1.5rem;
+$fs-20: 1.25rem;
+$container: 69.375rem;
+$transition: 250ms ease-in-out;
+
+
 
 
 $bg-body: hsl(0, 0%, 8%);

@@ -1,5 +1,5 @@
 header {
-    @include gradientBackground;
+    // @include gradientBackground;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -18,12 +18,11 @@ header {
                 font-size: 3.5rem;
                 line-height: 1.1;
                 letter-spacing: -3px;
-
             }
 
             p {
                 margin: 1rem 0 2rem;
-                color: $light-color;
+                color: $text2;
                 font-size: 1.1rem;
             }
         }
@@ -62,6 +61,7 @@ header {
                 margin: 0.8rem 0 1.5rem;
                 line-height: 1.4;
             }
+
         }
     }
 }
