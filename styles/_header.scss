@@ -15,9 +15,9 @@ header {
 
         .header__content {
             h1 {
-                font-size: 3.5rem;
+                font-size: $fs-48;
                 line-height: 1.1;
-                letter-spacing: -3px;
+                letter-spacing: -2px;
             }
 
             p {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
@@ -25,7 +25,7 @@ html h5 {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   line-height: 1.5;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -42,24 +42,22 @@ img {
   max-width: 100%;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5 {
   line-height: 1.2;
   color: hsl(0, 0%, 100%);
-  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 section {
   margin-top: 10rem;
-  text-transform: uppercase;
 }
 section > h2 {
   text-align: center;
   margin: 5.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .btn {
@@ -68,13 +66,13 @@ section > h2 {
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
-  background: hsl(153, 71%, 59%);
+  background: darkgreen;
   color: #ffffff;
   cursor: pointer;
   transition: all 400ms ease;
 }
 .btn:hover {
-  background: #6fe7b1;
+  background: #008d00;
   box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.15);
 }
 
@@ -210,7 +208,7 @@ nav .container .nav__logo h3 {
     background: linear-gradient(hsl(0, 0%, 14%), #050505);
   }
   nav .container ul li a.btn {
-    background: hsl(153, 71%, 59%);
+    background: #f72585;
   }
 }
 @keyframes flipNavItem {
@@ -237,9 +235,9 @@ header .container {
   justify-content: space-between;
 }
 header .container .header__content h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.1;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
 }
 header .container .header__content p {
   margin: 1rem 0 2rem;
@@ -273,6 +271,12 @@ header .container .header__content p {
     margin: 0.8rem 0 1.5rem;
     line-height: 1.4;
   }
+}
+#services {
+  border-top: 1px solid darkgreen;
+  width: calc(100% - 2rem);
+  max-width: 69.375rem;
+  margin-inline: auto;
 }
 #services .container {
   display: grid;
@@ -319,6 +323,12 @@ header .container .header__content p {
   #services .container article div h4 {
     margin-bottom: 0.8rem;
   }
+}
+#project {
+  border-top: 1px solid darkgreen;
+  width: calc(100% - 2rem);
+  max-width: 69.375rem;
+  margin-inline: auto;
 }
 #project .container {
   width: 90%;
@@ -371,7 +381,6 @@ header .container .header__content p {
   font-size: 1.5rem;
   line-height: 1.3;
   font-weight: 700;
-  text-transform: uppercase;
 }
 #project .container article .project__details p {
   font-size: 1rem;
@@ -381,7 +390,7 @@ header .container .header__content p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 45%;
+  bottom: 50%;
   padding: 0.2rem;
   display: flex;
   opacity: 0;
@@ -389,14 +398,12 @@ header .container .header__content p {
   transition: all 1s 400ms ease;
 }
 #project .container article .project__view a {
-  padding: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: hsl(0, 0%, 100%);
-  font-weight: 500;
   text-transform: uppercase;
 }
 #project .container article .project__view a:hover {
-  color: hsl(153, 71%, 59%);
+  color: darkgreen;
 }
 
 @media screen and (max-width: 1024px) {
@@ -409,6 +416,12 @@ header .container .header__content p {
   #project .container {
     grid-template-columns: 1fr;
   }
+}
+#technologies {
+  border-top: 1px solid darkgreen;
+  width: calc(100% - 2rem);
+  max-width: 69.375rem;
+  margin-inline: auto;
 }
 #technologies .container {
   display: grid;
@@ -458,12 +471,17 @@ header .container .header__content p {
 }
 /* CONTACT */
 #contact .container {
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: 47% 47%;
   gap: 6%;
 }
+#contact .container .info h2 {
+  font-size: 2.5rem;
+}
 #contact .container .info p {
   margin: 2rem 0 2rem;
+  font-size: 1.125rem;
 }
 
 form {
@@ -475,16 +493,17 @@ form .form__group label {
   font-size: 1rem;
   margin-bottom: 0.4rem;
   display: inline-block;
-  color: red;
+  color: hsl(0, 0%, 85%);
   font-weight: 600;
 }
 form .form__group input,
 form .form__group textarea {
-  background-color: #ffffff;
+  text-transform: uppercase;
+  border-bottom: darkgreen solid 1px;
+  background-color: transparent;
   padding: 0.85rem 1rem;
   display: block;
   width: 100%;
-  border-radius: 0.4rem;
   resize: none;
   -webkit-appearance: none;
      -moz-appearance: none;

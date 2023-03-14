@@ -1,5 +1,5 @@
 #technologies {
-
+    @include borderLine;
 
     .container {
         display: grid;
@@ -35,6 +35,10 @@
         }
     }
 }
+
+
+
+
 
 
 // ============================= MEDIA QUERIES (MEDIUM DEVICES) =========================

@@ -2,15 +2,22 @@
 
 #contact {
 
-
     .container {
+        padding-top: 10rem;
         display: grid;
         grid-template-columns: 47% 47%;
         gap: 6%;
 
+
+
         .info {
+            h2 {
+                font-size: $fs-40;
+            }
+
             p {
                 margin: 2rem 0 2rem;
+                font-size: $fs-18;
             }
         }
     }
@@ -27,20 +34,24 @@ form {
             font-size: 1rem;
             margin-bottom: 0.4rem;
             display: inline-block;
-            color: red;
+            color: $text2;
             font-weight: 600;
         }
 
         input,
         textarea {
-            background-color: $white-color;
+            text-transform: uppercase;
+            @include borderContact;
+            background-color: transparent;
             padding: 0.85rem 1rem;
             display: block;
             width: 100%;
-            border-radius: 0.4rem;
             resize: none;
             appearance: none;
+
         }
+
+
     }
 }
 
