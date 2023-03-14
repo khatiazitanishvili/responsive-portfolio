@@ -1,6 +1,5 @@
 footer {
-    background-color: $black-color;
-    color: $light-color;
+    @include borderLine;
     padding-top: 6rem;
     margin-top: 6rem;
 
@@ -40,7 +39,7 @@ footer {
 
             .footer__socials {
                 gap: 1rem;
-                font-size: 1.2rem;
+                font-size: $fs-36;
             }
         }
     }
